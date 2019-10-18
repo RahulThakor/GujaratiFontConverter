@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Gujarati Font Converter</title>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/convertsys.js"></script>
+    <script src="js/fontengine.js"></script>
+    <script src="js/myExpr.js"></script>
+    <link rel="stylesheet" href="css/design.css">
+
+    <!-- <link rel="stylesheet" href="font/Arpita_Bhashabharti/stylesheet.css" type="text/css" charset="utf-8" />  -->
+
+    
+
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function () {
+            $("#box1").keyup(function () {
+                $("#btnNonUnicodeToUnicode").prop("disabled", !this.value);
+                $("#but-copy1").prop("disabled", !this.value);
+                $("#btnClear").prop("disabled", !this.value);
+            });
+
+            $("#box3").keyup(function () {
+                $("#but-copy2").prop("disabled", !this.value);
+                $("#btnClear").prop("disabled", !this.value);
+            });
+
+        });
+
+        function checkLanguage() {
+            var v1 = document.getElementById('drpFont1');
+            var v2 = document.getElementById('drpFont2');
+            var valOfv1 = v1.options[v1.selectedIndex].innerHTML;
+            var valOfv2 = v2.options[v2.selectedIndex].innerHTML;
+
+            // change font of box
+            settBoxFon();
+
+            if (valOfv1 == "Arpita" && valOfv2 == "GopikaTwo") {
+                ArpitaToGopikaTwo();
+            }
+            else if (valOfv1 == "Unicode" && valOfv2 == "GopikaTwo") {
+                UnicodeToGopika(false);
+            }
+            else if (valOfv1 == "Unicode" && valOfv2 == "Arpita") {
+                UnicodeToGopika(true);
+            }
+            else if (valOfv1 == "GopikaTwo" && valOfv2 == "Arpita") {
+                GopikaTwoToArpita();
+            }
+            else {
+                alert("Conversion not Avaliable !!!!!!")
+            }
+
+        }</script>
+</head>
+
+<Body>
+    <center>
+        <h3 class="display-4">Gujarati Font Converter</h3>
+    </center>
+    <div class="row like-table-row">
+        <div class=col-sm-5>
+            <div class=card>
+                <div class=card-header>
+
+
+                    
+                    Gujarati <select id=drpFont1 onchange="settBoxFon()">
+                        <option value=aa-sulekh selected>Unicode</option>
+                        <option value=akashganga>GopikaTwo</option>
+                        <option value=amrut >Arpita</option>
+                    </select> text</div>
+
+                <div class=card-body><textarea id=box1 spellcheck=false>જયંતીભાઈ જય સ્વામિનારાયણ</textarea></div>
+
+                <input disabled name="Submit7" type="button" class="btn btn-warning" id="but-copy1"
+                    onclick="copy2clip('box1')" value="Copy">
+            </div>
+        </div>
+        <div class="col-sm-2 text-center">
+            <button type=button id=btnNonUnicodeToUnicode class="btn btn-primary" onclick="checkLanguage()"
+                disabled>==&gt;</button>
+            <br><br>
+            <button type=button id=btnClear class="btn btn-danger" onclick="clearForm()" disabled>Clear</button>
+
+        </div>
+        <div class=col-sm-5>
+            <div class=card>
+                <div class="card-header">
+                    Gujarati <select id=drpFont2 onchange="settBoxFon()">
+                        <option value=akashganga selected=selected>GopikaTwo</option>
+                        <option value=amrut>Arpita</option>
+                    </select> text.</div>
+
+                <div class=card-body><textarea id=box3 spellcheck=false></textarea></div>
+
+                <input disabled name="Submit7" type="button" class="btn btn-warning" id="but-copy2"
+                    onclick="copy2clip('box3')" value="Copy">
+            </div>
+        </div>
+    </div>
+
+</Body>
+<footer id=colophon class="site-footer container-fluid bg-light mt-5 py-3">
+    <div class="container text-center small">
+        <span>Copyright 2019 R@hulAT</span></div>
+</footer>
+
+</html>
