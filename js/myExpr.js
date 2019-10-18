@@ -329,7 +329,7 @@ function UnicodeToGopika(isArpita) {
    
    // ã = long  િ  --> following code to be corrected accordingly
    
-   modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
+   //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
 
    modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$2$1" ) ;
 
@@ -344,11 +344,11 @@ function UnicodeToGopika(isArpita) {
    
    modified_substring = modified_substring.replace( /hTr/g , "rhT" ) ;
    
-   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([્])/g , "$1$2hT" ) ;
+   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([્])/g , "$1$2o" ) ;
    
-   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([્])/g , "$1$2hT" ) ;
+   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([્])/g , "$1$2o" ) ;
    
-   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([ાીુૂૃેૈોૌંઁૅૉ઼]*)/g , "$1$2hT" ) ;
+   modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([ાીુૂૃેૈોૌંઁૅૉ઼]*)/g , "$1$2o" ) ;
    
    
 
