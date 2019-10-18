@@ -316,7 +316,7 @@ modified_substring = modified_substring.replace ( /શ્ર્/g , "©T" )  ;
 modified_substring = modified_substring.replace( /ર્/g , "hT" ) ;
 
 modified_substring = modified_substring.replace ( /ºtT/g , "ત્ર્" )  ; 
-modified_substring = modified_substring.replace ( /©T/g , "શ્ર્" )
+modified_substring = modified_substring.replace ( /©T/g , "શ્ર્" ) ;
 
 // following statements for adjusting postion of i maatraas.
 
@@ -325,11 +325,11 @@ modified_substring = modified_substring.replace( /િ/g , "r" ) ;
 
 // ã = long  િ  --> following code to be corrected accordingly
 
-modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([gì])/g , "$2$1" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([®])/g , "$2$1" ) ;
 
-modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([gì])/g , "$3$1$2" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
 
-modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([gì])/g , "$3$1$2" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
 
 
 // Eliminating "ર્" and putting  reph (ó)  at proper position for this.
