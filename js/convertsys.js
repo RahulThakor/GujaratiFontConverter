@@ -12,27 +12,27 @@ function clearForm() {
 
 function settBoxFon(){
 
-    // var v1 = document.getElementById('drpFont1');
-    // var v2 = document.getElementById('drpFont2');
-    // var valOfv1 = v1.options[v1.selectedIndex].innerHTML;
-    // var valOfv2 = v2.options[v2.selectedIndex].innerHTML;
+     var v1 = document.getElementById('drpFont1');
+     var v2 = document.getElementById('drpFont2');
+     var valOfv1 = v1.options[v1.selectedIndex].innerHTML;
+     var valOfv2 = v2.options[v2.selectedIndex].innerHTML;
 
-    // if (valOfv2 == "Arpita") {
-    //     document.getElementById("box3").style.fontFamily = "GopikaTwoArpita";
-    // }
-    // else if (valOfv2 == "GopikaTwo") {
-    //     document.getElementById("box3").style.fontFamily = "GopikaTwoBhashabharti";
-    // }
+     if (valOfv2 == "Arpita") {
+         document.getElementById("box3").style.fontFamily = "GopikaTwoArpita";
+     }
+     else if (valOfv2 == "GopikaTwo") {
+         document.getElementById("box3").style.fontFamily = "GopikaTwoBhashabharti";
+     }
 
-    // if (valOfv1 == "Arpita") {
-    //     document.getElementById("box1").style.fontFamily = "GopikaTwoArpita";
-    // }
-    // else if (valOfv1 == "GopikaTwo") {
-    //     document.getElementById("box1").style.fontFamily = "GopikaTwoBhashabharti";
-    // }
-    // else {
-    //     document.getElementById("box1").style.fontFamily = "GopikaTwoBhashabharti";
-    // }
+     if (valOfv1 == "Arpita") {
+         document.getElementById("box1").style.fontFamily = "GopikaTwoArpita";
+     }
+     else if (valOfv1 == "GopikaTwo") {
+         document.getElementById("box1").style.fontFamily = "GopikaTwoBhashabharti";
+     }
+     else {
+         document.getElementById("box1").style.fontFamily = "GopikaTwoBhashabharti";
+     }
 }
 
 
