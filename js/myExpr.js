@@ -321,11 +321,13 @@ function UnicodeToGopika(isArpita) {
    
    // following statements for adjusting postion of i maatraas.
    
-   //modified_substring = modified_substring.replace( /િં/g , "®" ) ;
-   //modified_substring = modified_substring.replace( /િ/g , "r" ) ;
+   modified_substring = modified_substring.replace( /િં/g , "®" ) ;
+   modified_substring = modified_substring.replace( /િ/g , "r" ) ;
    
    // ã = long  િ  --> following code to be corrected accordingly
    
+   modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$2$1" ) ;
+
    modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([®])/g , "$2$1" ) ;
    
    modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
