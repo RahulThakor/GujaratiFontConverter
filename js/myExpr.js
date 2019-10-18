@@ -9,6 +9,7 @@ function UnicodeToGopika(isArpita) {
    
    
        "ૐ" , "H",
+
        "ઈં" , "#",
        "ઇં" , "$",
        "ઉં" , "ô",
@@ -320,8 +321,8 @@ function UnicodeToGopika(isArpita) {
    
    // following statements for adjusting postion of i maatraas.
    
-   modified_substring = modified_substring.replace( /િં/g , "®" ) ;
-   modified_substring = modified_substring.replace( /િ/g , "r" ) ;
+   //modified_substring = modified_substring.replace( /િં/g , "®" ) ;
+   //modified_substring = modified_substring.replace( /િ/g , "r" ) ;
    
    // ã = long  િ  --> following code to be corrected accordingly
    
@@ -342,6 +343,8 @@ function UnicodeToGopika(isArpita) {
    
    modified_substring = modified_substring.replace( /hT([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([ાીુૂૃેૈોૌંઁૅૉ઼]*)/g , "$1$2hT" ) ;
    
+   
+
    modified_substring = modified_substring.replace( /ીંhT/g , "`" ) ;
    modified_substring = modified_substring.replace( /ીhT/g , "hTe" ) ;
    
