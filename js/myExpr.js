@@ -359,7 +359,7 @@ function UnicodeToGopika(isArpita) {
    
    // ã = long  િ  --> following code to be corrected accordingly
    
-   //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
+   modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
 
    modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$2$1" ) ;
 
