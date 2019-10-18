@@ -3,9 +3,9 @@ function UnicodeToGopika(isArpita) {
     
 var array_one = new Array(
 
-    "ર્ીં" , "hTª",
-    "ર્ી" , "hTe",
-    "િં" , "®",
+    //"ર્ીં" , "hTª",
+    //"ર્ી" , "hTe",
+    //"િં" , "®",
 
 
     "ૐ" , "H",
@@ -43,8 +43,8 @@ var array_one = new Array(
 
 
 
-    "્રુ" , "úw",
-    "્રૂ" , "úq",
+   // "્રુ" , "úw",
+   // "્રૂ" , "úq",
 
     "ટ્રુ" , "x›",
     "ટ્રૂ" , "x‰",
@@ -68,11 +68,11 @@ var array_one = new Array(
     "ફ્ર" , "£",
     "હ્ર" , "´",
 
-    "વ્ર" , "ðú",
+   // "વ્ર" , "ðú",
 
     "્ર" , "ú",
 
-    "ર્" , "hT",
+    //"ર્" , "hT",
 
     "ક્ન" , "õ™",
     "ટ્ટ" , "è",
@@ -86,11 +86,11 @@ var array_one = new Array(
     "ઢ્ઢ" , "ë",
     "" , "",
     "ડ્ઢ" , "D",
-    "ડ્ઢ" , "D",
+    //"ડ્ઢ" , "D",
     "હ્ન" , "ö",
     "હ્ય્" , "ÌtT",
     "હ્ય" , "Ìt",
-    "હ્ય" , "Ìt",
+    //"હ્ય" , "Ìt",
     "શ્ન" , "§",
     "ઙ્ક" , "Ñ",
     "ઙ્ખ" , "Ö",
@@ -132,7 +132,7 @@ var array_one = new Array(
     "ક્ક" , "¬",
     "દ્ય" , "ã",
 
-    "્ય" , "â",
+    //"્ય" , "â",
 
     "ક્" , "fT",
     "ખ્" , "¾T",
@@ -147,7 +147,7 @@ var array_one = new Array(
     "થ્" , "ÚtT",
     "ધ્" , "ÄT",
     "ન્" , "™T",
-    "ન્" , "™T",
+   // "ન્" , "™T",
     "પ્" , "…T",
     "ફ્" , "VT",
     "બ્" , "ƒT",
@@ -157,7 +157,7 @@ var array_one = new Array(
     "લ્" , "÷T",
     "વ્" , "ðT",
     "શ્" , "þT",
-    "શ્" , "þT",
+   // "શ્" , "þT",
     "સ્" , "ËT",
     "ષ્" , "»tT",
     "હ્" , "nT",
@@ -201,7 +201,7 @@ var array_one = new Array(
     "મ" , "{",
 
     "ય" , "Þ",
-    "ર્ " , "hT ",
+    //"ર્ " , "hT ",
     "ર" , "h",
     "લ" , "÷",
     "વ" , "ð",
@@ -217,21 +217,21 @@ var array_one = new Array(
     "ા" , "t",
     "ૅ" , "ì",
     "ૉ" , "tì",
-    "િ" , "r",
+   // "િ" , "r",
     "ીં" , "ª",
     "ી" , "e",
     "ુ" , "w",
     "ૂ" , "q",
-    "ુ" , "w",
-    "ૂ" , "q",
+    //"ુ" , "w",
+   // "ૂ" , "q",
     "ૃ" , "]",
     "ે" , "u",
     "ૈ" , "i",
     "ો" , "tu",
     "ૌ" , "ti",
+    //"ઁ" , "P",
     "ઁ" , "P",
-    "ઁ" , "P",
-    "ં" , "k",
+   // "ં" , "k",
     "ં" , "k",
     "ઃ" , ":",
     "ઽ" , "à",
@@ -325,11 +325,11 @@ modified_substring = modified_substring.replace( /િ/g , "r" ) ;
 
 // ã = long  િ  --> following code to be corrected accordingly
 
-//modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([®])/g , "$2$1" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([®])/g , "$2$1" ) ;
 
-//modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
 
-//modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
+modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])(્)([®])/g , "$3$1$2" ) ;
 
 
 // Eliminating "ર્" and putting  reph (ó)  at proper position for this.
