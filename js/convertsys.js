@@ -35,15 +35,27 @@ function settBoxFon(){
      }
 }
 
-
-
-
 function copy2clip(id) {
     var copyText = document.getElementById(id);
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
   }
+
+
+function paste_text(id) {
+//document.getElementById(id).value = ''
+
+//document.getElementById(id).focus;
+//pasteText.focus();
+//document.execCommand("paste");
+
+//document.querySelector(id).focus();
+//document.execCommand("paste");
+//document.execCommand("paste");
+
+//document.getElementById(id).value = document.execCommand("paste")
+}
 
  
 
