@@ -324,9 +324,11 @@ function UnicodeToGopika(isArpita) {
    
        Replace_Symbols( ) ;
    
+
+       //દ્રષ્ટિ
        modified_substring = modified_substring.replace( /rÿ/g , "ÿr" ) ;
 
-       
+
        processed_text += modified_substring ;
    
    //**************************************
