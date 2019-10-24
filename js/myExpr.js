@@ -204,6 +204,7 @@ function UnicodeToGopika(isArpita) {
        "રૂ" , "Y",
    
        "ફ઼" , "V|",
+
        "ક" , "f",
        "ખ" , "¾",
        "ગ" , "„",
@@ -364,7 +365,7 @@ function UnicodeToGopika(isArpita) {
 
    //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
 
-   modified_substring = modified_substring.replace( /([ક્ ખ્ ગ્ ઘ્ ઝ઼ ચ્ જ્ ઞ્ ણ્ ત્ થ્ ધ્ ન્ પ્ ફ્ બ્ ભ્ મ્ ય્ લ્ વ્ શ્ સ્ ષ્ હ્ ળ્])([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Â])/g , "$3$1$2" ) ;
+   modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ]*)([ક્ ખ્ ગ્ ઘ્ ઝ઼ ચ્ જ્ ઞ્ ણ્ ત્ થ્ ધ્ ન્ પ્ ફ્ બ્ ભ્ મ્ ય્ લ્ વ્ શ્ સ્ ષ્ હ્ ળ્])([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Â])/g , "$3$1$2" ) ;
   
    //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$2$1" ) ;
 
@@ -393,7 +394,7 @@ function UnicodeToGopika(isArpita) {
    modified_substring = modified_substring.replace( /ંhT/g , "hTk" ) ;
    
    // Halanta after which there is no constant but space, hypen, comma or full-stop etc
-   // RRR modified_substring = modified_substring.replace ( /[્]([ \,\;\.।\n\-\:])/g , "T$1" ) ;
+   modified_substring = modified_substring.replace ( /[્]([ \,\;\.।\n\-\:])/g , "T$1" ) ;
    
    modified_substring = modified_substring.replace( /([કછટઢફ])્ય/g , "$1â" ) ;
    
