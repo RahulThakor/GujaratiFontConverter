@@ -234,7 +234,7 @@ function UnicodeToGopika(isArpita) {
        "મ" , "{",
    
        "ય" , "Þ",
-       //"ર્ " , "hT ",
+       //"ર્ " , "hT ",
        "ર" , "h",
        "લ" , "÷",
        "વ" , "ð",
