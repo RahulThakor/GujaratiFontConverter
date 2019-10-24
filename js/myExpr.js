@@ -324,6 +324,9 @@ function UnicodeToGopika(isArpita) {
    
        Replace_Symbols( ) ;
    
+       modified_substring = modified_substring.replace( /rÿ/g , "ÿr" ) ;
+
+       
        processed_text += modified_substring ;
    
    //**************************************
@@ -390,7 +393,7 @@ function UnicodeToGopika(isArpita) {
    modified_substring = modified_substring.replace( /ંhT/g , "hTk" ) ;
 
 
-   modified_substring = modified_substring.replace( /rÿ/g , "ÿr" ) ;
+   
    
    // Halanta after which there is no constant but space, hypen, comma or full-stop etc
    modified_substring = modified_substring.replace ( /[્]([ \,\;\.।\n\-\:])/g , "T$1" ) ;
