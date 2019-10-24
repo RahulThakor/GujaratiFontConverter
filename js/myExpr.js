@@ -363,7 +363,7 @@ function UnicodeToGopika(isArpita) {
 
    //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([Š])/g , "$2$1" ) ;
 
-   //modified_substring = modified_substring.replace( /([ક્ ખ્ ગ્ ઘ્ ઝ઼ ચ્ જ્ ઞ્ ણ્ ત્ થ્ ધ્ ન્ પ્ ફ્ બ્ ભ્ મ્ ય્ લ્ વ્ શ્ સ્ ષ્ હ્ ળ્])([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$3$1$2" ) ;
+   modified_substring = modified_substring.replace( /([ક્ ખ્ ગ્ ઘ્ ઝ઼ ચ્ જ્ ઞ્ ણ્ ત્ થ્ ધ્ ન્ પ્ ફ્ બ્ ભ્ મ્ ય્ લ્ વ્ શ્ સ્ ષ્ હ્ ળ્])([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "Â$1$2" ) ;
   
    //modified_substring = modified_substring.replace( /([કખગઘઙચછજઝઞટઠડઢણતથદધનપફબભમયરલવશષસહળ])([r])/g , "$2$1" ) ;
 
